@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+
+    font-family: 'Encode Sans Condensed', sans-serif;
+}
+body{
+    background-color:rgb(247, 238, 226); 
+}
+                                /* Estilos generales*/
+
+h1{font-size: 3em;}
+h2{font-size: 2.5em;}
+h3{ font-size: 2em;}
+ul{list-style: none;}
+a{text-decoration: none;
+  color: black;  
+}
+
+
+
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color:#faa307;
+    border-radius: 10px;
+    /* border: 2px solid  #f48c06; */
+    border: none;
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.5);
+}
+button:hover{
+    background-color: #ec8804;
+    color: rgb(247, 238, 226);
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+footer{
+    margin: 0px;
+    background-color: #faa307;
+    padding: 60px; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;    
+    color: rgb(247, 238, 226);
+    font-size: larger;
+    font-weight: bold; 
+    
+}
+
+    
+
+                                 /*empieza HEADER*/
+
+header{
+    background-color: #faa307;  
+}
+header #logo{
+    
+    font-size: 3em;    
+    font-weight: bolder;
+    color: rgb(247, 238, 226);
+}
+header a{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(247, 238, 226)
+}
+header a:hover{
+    color: #c47713;
+}
+
+
+                            /*empieza @media screen max width: 1024px*/
+
+@media screen and (max-width:1024px) {
+        
+    header #logo{
+        margin: 0;
+        padding:10px 0px 5px 38px;
+        justify-items: center;
+    }
+    header .container{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 10px;
+        
+    }
+    header li{
+        padding: 3px 20px;
+    }
+
+                /*fin de header*/
+                 /*empieza body section .somosigbs somos igbs*/
+                 
+
+
+    
+    .somosIgbs #somosImgGrid{
+        display: none;
+    }   
+    .somosIgbs #somosGrid{
+        align-content: space-around;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-image:url(../img/background_somos.jpg);
+        background-size:cover;
+        background-position: center center;
+        padding: 300px 0px;
+        
+    }
+    .somosIgbs #somosGrid h1{
+        margin: 25px, 30px ;
+        text-align: center;
+    }
+    .somosIgbs #somosGrid p{
+        padding-top: 20px;
+        font-size: larger;
+        text-align: center;
+        margin: 50px 90px;
+        font-weight: bold;
+    }
+                    /*inicio Section Cursos link*/
+    
+                    
+   .cursosIndex .container{
+       background-position: center center;
+       color: rgb(247, 238, 226);
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       text-align: center;
+       align-items: center;
+       background-image:linear-gradient(
+           0deg,
+           rgba(0,0,0,0.5),
+           rgba(0,0,0,0.5)
+       ) 
+       ,url(../img/background_Cursos_index.jpg);
+       height: 90vh;
+  
+   }  
+   .cursosIndex .container h2{
+       padding: 30px 0px;
+   }
+
+    
+                   /*FIN body section .somosigbs somos igbs*/ 
+
+                                 /*inicia body section CURSOS*/
+    #cursos{
+        background-color: rgb(30,30,30);
+        color:rgb(247, 238, 226);
+        text-align: center;
+        padding-bottom: 100px;
+        
+    }
+    #cursos .nuestrosCursos{
+        padding-top: 50px;
+    }
+    #cursos h2{
+        margin-top: 0px;
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
+    #cursos p{
+        display: none;
+    }
+    #cursos .carta{
+        background-position: center center;
+        background-size: cover;
+        padding: 80px;
+        margin: 30px;
+        border-radius: 20px;
+    }
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(../img/Gastronomia.jpg);
+
+    }
+    .carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/Pasteleria.jpg)
+    }
+    .carta:last-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/Cocineritos.jpg)
+    }
+
+       
+                                /*fin de @media screen and (max-width:1024px)*/
+
+  
+}
+
+                    /*inicia @media screen and (min-width:1024px)*/ /* RESPONSIVE 1024PX en adelanmte*/
+
+                    /*HEADER*/
+
+@media screen and (min-width:1024px){
+
+    header .container {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       }
+    header #logo{
+        padding-left: 20px;
+    }
+    header .container nav ul{
+        display: flex;
+        
+        padding-top: 25px;
+
+
+    }
+    header li{
+        margin: 0px 30px 25px 30px;
+    }
+    
+                
+    .somosIgbs .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 50px ;
+        max-width: 1400px;
+        gap: 1em;
+        padding-bottom: 20px;
+     }
+    .somosIgbs .container #somosImgGrid{
+        width: 96%;
+        max-width: 960px;
+        margin: 0px auto;
+    }
+    .somosIgbs #somosImgGrid img{
+        max-width: 100%;
+        max-height: auto;
+        display: grid;
+        
+        border-radius: 20px;
+        text-align: center;
+    }
+    #somosGrid{
+        display: grid;
+        height: auto;
+        background-color: #faa307;
+        color:rgb(247, 238, 226) ;
+        border-radius: 20px;
+        text-align: center;
+        margin-left:10p ;
+    }
+    .somosIgbs h1 {
+        display: flex;
+        align-self: flex-start;
+        justify-content: center;
+        padding-top: 30px;
+        
+    }
+    .somosIgbs p{
+        display: flex;
+        align-content: flex-end;
+        justify-content: center;
+        font-size:x-large;
+        
+    }
+
+
+    /*inicio section cursosIndex*/
+
+    .cursosIndex .container{
+        color: rgb(247, 238, 226);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background-image:linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ) 
+        ,url(../img/background_Cursos_index.jpg);
+        height: 90vh;
+        border-radius: 20px;
+        margin: 20px auto;
+   
+    }  
+    .cursosIndex .container h2{
+        padding: 30px 0px;
+    }
+
+        /*termina cursosIndex*/
+        /*inicia Curosos page*/
+
+    #cursos{
+        background-color: rgb(30,30,30);
+        color:rgb(247, 238, 226);
+        text-align: center;
+        padding-bottom: 100px;
+        
+    }
+    #cursos .nuestrosCursos{
+        padding-top: 50px;
+    }
+    #cursos h2{
+        margin-top: 0px;
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
+    #cursos p{
+        display: none;
+    }
+    #cursos .carta{
+        background-position: center center;
+        background-size: cover;
+        padding: 80px;
+        margin: 30px;
+        border-radius: 20px;
+    }
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(../img/Gastronomia.jpg);
+
+    }
+    .carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/Pasteleria.jpg)
+    }
+    .carta:last-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/Cocineritos.jpg)
+    }
+      
+ 
+
+}
+    
